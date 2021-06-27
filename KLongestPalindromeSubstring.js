@@ -10,7 +10,7 @@ var longestPalindrome = function (s) {
 
         if (len > end - start) {
             start = Math.ceil(i - ((len - 1) / 2));
-            end = i + (len / 2);
+            end = i + Math.ceil(len / 2);
         }
     }
 
